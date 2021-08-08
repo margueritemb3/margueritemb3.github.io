@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+#name {
+  font-family: 'WindSong', cursive;
+  font-size: 200px;
+}
+
+#projectBox {
+  opacity: 0.7;
+  margin: 50px;
+  padding-top: 50px;
+  box-shadow: 15px 15px 10px black;
+  text-align: 'center';
+}
+
+#projectHeader {
+  font-size: 1.5em;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+#projectText {
+  font-size: 1em;
+  text-align: left;
+}
