@@ -57,7 +57,7 @@ function Home() {
                             The bot makes calls to the Steam Web API every 2 minutes to check for Dota 2 news and updates.
                             Built using Javascript and Discord.js.
                         </div>
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme="" variant="outline" mt="100px">
+                        <Button rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="100px">
                             <Link to="/patchbot">Learn More</Link>
                         </Button>
                     </GridItem>
@@ -75,7 +75,7 @@ function Home() {
                             The goal is to color the correct squares following the clues printed on the left side and top of the grid that correspond to the number of colored squares in sequence in each row/column.
                             Built using Javascript and p5.js
                         </div>
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme="pink" variant="outline" mt="100px">
+                        <Button rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="100px">
                             <Link to="/puzzlegame">Learn More</Link>
                         </Button>
                     </GridItem>
