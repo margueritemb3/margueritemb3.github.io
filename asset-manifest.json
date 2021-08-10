@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.461eef48.chunk.css",
+    "main.js": "/static/js/main.85a16b61.chunk.js",
+    "main.js.map": "/static/js/main.85a16b61.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cbc43972.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cbc43972.js.map",
+    "static/js/2.3a95e4c4.chunk.js": "/static/js/2.3a95e4c4.chunk.js",
+    "static/js/2.3a95e4c4.chunk.js.map": "/static/js/2.3a95e4c4.chunk.js.map",
+    "static/js/3.0d347d78.chunk.js": "/static/js/3.0d347d78.chunk.js",
+    "static/js/3.0d347d78.chunk.js.map": "/static/js/3.0d347d78.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.461eef48.chunk.css.map": "/static/css/main.461eef48.chunk.css.map",
+    "static/js/2.3a95e4c4.chunk.js.LICENSE.txt": "/static/js/2.3a95e4c4.chunk.js.LICENSE.txt",
+    "static/media/Web_App_Reference_Architecture.56ca88a2.jpg": "/static/media/Web_App_Reference_Architecture.56ca88a2.jpg",
+    "static/media/App.css": "/static/media/rbranches.ef885403.png",
+    "static/media/quonk.30b84da1.gif": "/static/media/quonk.30b84da1.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbc43972.js",
+    "static/js/2.3a95e4c4.chunk.js",
+    "static/css/main.461eef48.chunk.css",
+    "static/js/main.85a16b61.chunk.js"
+  ]
+}
