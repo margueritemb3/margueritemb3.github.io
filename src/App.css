@@ -1,25 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Playfair+Display&family=Spectral&display=swap');
 
 #name {
   font-family: 'WindSong', cursive;
-  font-size: 200px;
+  font-size: 8vw;
+  text-shadow: 10px 10px 15px black;
+}
+
+#subtitle {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 40px;
+  text-shadow: 5px 5px 5px black;
+  color: #eebd95;
 }
 
 #projectBox {
-  opacity: 0.7;
   margin: 50px;
   padding-top: 50px;
   box-shadow: 15px 15px 10px black;
   text-align: 'center';
+  background: rgba(57, 66, 80, 0.7);
 }
 
 #projectHeader {
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: left;
   padding-bottom: 15px;
+  font-family: 'Spectral', serif;
 }
 
 #projectText {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: left;
+  font-family: 'Karla', sans-serif;
+}
+
+.branches {
+  background-image: url('Branches/lbranches.png'), url('Branches/rbranches.png');
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+#home {
+  background-size: 2000px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1c2736;
+}
+
+#projectPage {
+  background-size: 1500px;
+}
+
+.projectImage {
+  opacity: 1;
+  width: 80%;
+}
+
+#button {
+  font-family: 'Karla', sans-serif;
+}
+
+#projectTitle {
+  font-family: 'Spectral', serif;
+}
+
+#heading {
+  font-family: 'Spectral', serif;
+}
+
+#text {
+  font-family: 'Karla', sans-serif;
 }

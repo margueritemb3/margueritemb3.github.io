@@ -14,6 +14,8 @@ import './App.css';
 import Home from './Pages/Home.js';
 import PatchBot from './Pages/PatchBot.js';
 import PuzzleGame from './Pages/PuzzleGame.js';
+import BirthdayBot from './Pages/BirthdayBot.js';
+import ScrollToTop from './ScrollToTop.js';
 
 
 const colors = {
@@ -35,10 +37,27 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "brand.100"
-      }
-    }
-  }
+        bg: 'brand.100',
+      },
+    },
+  },
+  components: {
+    Button: {
+      variants: {
+        outline: {
+          _hover: {
+            bg: 'brand.600',
+            color: 'brand.100'
+          },
+          _active: {
+            bg: 'brand.100',
+            color: 'brand.600',
+            transform: 'scale(0.99)',
+          },
+        },
+      },
+    },
+  },
 });
 
 function App() {
@@ -46,17 +65,22 @@ function App() {
     <Router>
       <ChakraProvider theme={theme}>
         <div>
-          <Switch>
-            <Route path="/patchbot">
-              <PatchBot />
-            </Route>
-            <Route path="/puzzlegame">
-              <PuzzleGame />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <ScrollToTop>
+            <Switch>
+              <Route path="/patchbot">
+                <PatchBot />
+              </Route>
+              <Route path="/puzzlegame">
+                <PuzzleGame />
+              </Route>
+              <Route path="/birthdaybot">
+                <BirthdayBot />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </ScrollToTop>
         </div>
       </ChakraProvider>
     </Router>

@@ -15,34 +15,28 @@ import {
     ArrowRightIcon,
     ChevronRightIcon
 } from '@chakra-ui/icons';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import '../Leaves.css';
 import '../App.css';
-import '../Branches.css';
-import placeholderGif from '../quonk.gif';
-import steamAPI from '../steamapi.JPG';
 
 function PatchBot() {
+    let history = useHistory();
     return (
-        <>
+        <div class="branches" id="projectPage">
             <div id="leaves">
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
             <div id="leavesleft">
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
-            <Button leftIcon={<ArrowBackIcon />} colorScheme="pink" variant="outline" ml="50px" pr="10px" />
+            <Button onClick={() => history.push('/')} leftIcon={<ArrowBackIcon />} colorScheme="brand" variant="outline" ml="50px" pr="10px" />
             <Box textAlign="center" fontSize="xl" mt="100px" pb="30px" ml="500px" mr="500px">
-                <Heading as="h1" size="3xl" color="brand.600">Dota 2 Patch Bot</Heading>
-                <Text mt="50px" align="justify" color="brand.500">
+                <Heading id="projectTitle" as="h1" size="3xl" color="brand.600">Dota 2 Patch Bot</Heading>
+                <Text id="text" mt="50px" align="justify" color="brand.500">
                     A Discord bot that checks for updates and news about the video game, Dota 2, and posts links to the official news/updates in a specified discord channel.
                 </Text>
-                <Heading mt="50px" color="brand.500">How To Use The Bot</Heading>
-                <Text align="justify" color="brand.500">
+                <Heading id="heading" mt="50px" color="brand.500">How To Use The Bot</Heading>
+                <Text id="text" align="justify" color="brand.500">
                     Once the admin of a Discord server adds the bot to their server, using the link below, they (and other members) can use any of the programmed commands to interact with the bot and set it up:
                     <Text ml="50px" mr="50px">
                         <br />'!patch' - reposts the most recent Dota 2 update.
@@ -51,11 +45,11 @@ function PatchBot() {
                         <br />'!patch notify' - adds the role of 'Dota2PatchBotNotification' to the user who sent this command.
                     </Text>
                 </Text>
-                <Button as="a" href="https://discord.com/oauth2/authorize?client_id=836767045084512306&scope=bot&permissions=8" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="pink" variant="outline" mt="30px">
+                <Button id="button" as="a" href="https://discord.com/oauth2/authorize?client_id=836767045084512306&scope=bot&permissions=8" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="30px">
                     Add Bot To Server
                 </Button>
-                <Heading mt="50px" color="brand.500">How it Works</Heading>
-                <Text align="justify" color="brand.500">
+                <Heading id="heading" mt="50px" color="brand.500">How it Works</Heading>
+                <Text id="text" align="justify" color="brand.500">
                     This bot was built using Javascript and the Discord.js library.
                     It uses the Google Firestore NoSQL document database to store Discord server data and keep track of already-posted updates.
                     In the database, there is a collection of documents, each for a Discord server, each storing the channel id of the channel that is subscribed and the role id of the role that the bot uses to notify members.
@@ -79,24 +73,24 @@ function PatchBot() {
                     It does this by looking for the newest non-client update/news and comparing that id with the id stored in the database and if they are the same, it doesn't make a new post.
                     If they are not the same, however, this indicates that the newest update is not one we have read before, so it posts it and updates the database.
                 </Text>
-                <Button as="a" href="https://github.com/margueritemb3/dota2pb" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="pink" variant="outline" mt="30px">
+                <Button id="button" as="a" href="https://github.com/margueritemb3/dota2pb" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="30px">
                     See Code Repository
                 </Button>
-                <Heading mt="50px" color="brand.500">Why?</Heading>
-                <Text align="justify" color="brand.500">
+                <Heading id="heading" mt="50px" color="brand.500">Why?</Heading>
+                <Text id="text" align="justify" color="brand.500">
                     As an avid Dota 2 player and the Dota 2 Competitive Lead at the University of Minnesota, Twin Cities, I am deeply involved in the Dota 2 community.
                     Whenever new updates come out, there is often a delay before many people find out, because unless someone is constantly monitoring the steam databases or APIs, they will hear from a friend, who heard from another friend, and so on.
                     As Discord is a popular platform for all kinds of gamers, including Dota 2 players, I thought a great way to solve this problem would be to make a Discord bot that conveniently monitors steam updates, so players don't have to.
                 </Text>
-                <Heading mt="50px" color="brand.500">Road Blocks & Difficulties</Heading>
-                <Text align="justify" color="brand.500">
+                <Heading id="heading" mt="50px" color="brand.500">Road Blocks & Difficulties</Heading>
+                <Text id="text" align="justify" color="brand.500">
                     At first, the server & last patch data was gathered when the bot started running.
                     This was convenient for testing purposes and focusing on command functionality, but it also meant that the bot would lose all data any time it crashed, was turned off, restarted, or updated.
                     This is of course an issue as it requires the server admin to resubscribe the bot anytime it is restarted and it reposts the most recent news every time it is restarted (even if it has already been posted).
                     To solve this, the bot was connected to a database (google firestore, because its free), which was more complicated, but made the bot durable.
                 </Text>
-                <Heading mt="50px" color="brand.500">Potential Extensions</Heading>
-                <Text align="justify" color="brand.500">
+                <Heading id="heading" mt="50px" color="brand.500">Potential Extensions</Heading>
+                <Text id="text" align="justify" color="brand.500">
                     Add the ability to subscribe to other games.
                     There Steam Web API has update information on all of the games on the Steam distribution service, making it easy to access information on many games.
                     Would require a bit of a database rework to keep track of the id of the last news posted for multiple games as well as each Discord servers' games they are subscribed to.
@@ -106,7 +100,7 @@ function PatchBot() {
                     Would need to query for a factor of 'n' results (as opposed to the current 100) such as 'n * 50' or 'n * 100', as there needs to be enough news items to respond to the command with the correct amount.
                 </Text>
             </Box>
-        </>
+        </ div>
     );
 }
 

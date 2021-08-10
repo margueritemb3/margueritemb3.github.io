@@ -23,19 +23,19 @@ import {
 } from "react-router-dom";
 import '../Leaves.css';
 import '../App.css';
-import placeholderGif from '../quonk.gif';
-import steamAPI from '../steamapi.JPG';
+
 
 function PuzzleGame() {
+    let history = useHistory();
     return (
-        <>
+        <div class="branches" id="projectPage">
             <div id="leaves">
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
             <div id="leavesleft">
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
-            <Button leftIcon={<ArrowBackIcon />} colorScheme="pink" variant="outline" ml="50px" pr="10px" />
+            <Button onClick={() => history.push('/')} leftIcon={<ArrowBackIcon />} colorScheme="brand" variant="outline" ml="50px" pr="10px" />
             <Box textAlign="center" fontSize="xl" mt="100px" pb="30px" ml="500px" mr="500px">
 
                 <Heading as="h1" size="3xl" color="brand.600">Grid Puzzle Game</Heading>
@@ -44,9 +44,9 @@ function PuzzleGame() {
                 </Text>
                 <Heading mt="50px" color="brand.500">How To Play</Heading>
                 <Text align="justify" color="brand.500">
-                    Each square in the grid can be clicked to change the color of that square.
+                    Each square in the grid can be clicked to change the color of that square to pink.
                     <br /> <br />
-                    There are number clues on the sides of each row and column of the grid indicating how many squares need to be colored in a row.
+                    There are number clues on the sides of each row and column of the grid indicating how many squares need to be colored pink in a row.
                     If there are multiple numbers on the same row or column, it indicates that there are multiple groups of filled in squares, each group separated by at least one unfilled box.
                     <br /> <br />
                     The header of a row/column turns gray when there is a valid sequence of filled in squares in that row/column.
@@ -56,8 +56,10 @@ function PuzzleGame() {
                     This has no effect on the solution and is only for note-taking and as a visual aid to mark squares that the player has already figured out will definitely not be filled.
                     The player can choose to use this feature, ignore it, or partially use it.
                     It has no effect on the solution of the puzzle.
+                    <br /> <br />
+                    There is also the ability to reset a puzzle board by clicking the 'Reset Puzzle' button in the top left of the game.
                 </Text>
-                <Button as="a" href="https://gridpuzzle.netlify.app/" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="pink" variant="outline" mt="30px">
+                <Button id="button" as="a" href="https://gridpuzzle.netlify.app/" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="30px">
                     Play Game
                 </Button>
                 <Heading mt="50px" color="brand.500">How it Works</Heading>
@@ -76,7 +78,7 @@ function PuzzleGame() {
                     These 2-dimensional arrays are built by iterating through the puzzle solution and keeping track of how many colored squares are in sequence on each row and column.
                     These arrays are used to put together regular expressions to check for valid rows (grayed out rows).
                 </Text>
-                <Button as="a" href="https://github.com/margueritemb3/grid-puzzle" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="pink" variant="outline" mt="30px">
+                <Button id="button" as="a" href="https://github.com/margueritemb3/grid-puzzle" target="_blank" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="30px">
                     See Code Repository
                 </Button>
                 <Heading mt="50px" color="brand.500">Why?</Heading>
@@ -108,7 +110,7 @@ function PuzzleGame() {
                     This would just require a database or a file of premade 2-dimensional array designs.
                 </Text>
             </Box>
-        </>
+        </ div>
     );
 }
 
