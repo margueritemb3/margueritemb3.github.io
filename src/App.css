@@ -130,7 +130,6 @@
     text-align: left;
     color: #ffffff;
   }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -178,8 +177,8 @@
   }
 
   .branches {
-    background-image: url('Branches/leftbranches.png'),
-      url('Branches/rightbranches.png');
+    background-image: url('Branches/lbranches.png'),
+      url('Branches/rbranches.png');
     background-position: left top, right top;
     background-repeat: repeat, repeat;
   }
@@ -204,7 +203,7 @@
   #button {
     margin-top: 50px;
     font-family: 'Karla', sans-serif;
-    font-size: 15px
+    font-size: 15px;
   }
 
   #backButton {
@@ -259,7 +258,7 @@
     color: #ffffff;
   }
 
-  #grid{
+  #grid {
     margin-left: 8%;
   }
 }
@@ -301,6 +300,7 @@
     font-size: 20px;
     text-align: left;
     font-family: 'Karla', sans-serif;
+    text-align: justify;
   }
 
   .branches {
@@ -382,7 +382,7 @@
     color: #ffffff;
   }
 
-  #grid{
+  #grid {
     margin-left: 10%;
   }
 }
@@ -503,7 +503,7 @@
     color: #ffffff;
   }
 
-  #grid{
+  #grid {
     margin-left: 10%;
   }
 }
@@ -624,8 +624,8 @@
     font-family: 'Karla', sans-serif;
     color: #ffffff;
   }
-  
-  #grid{
+
+  #grid {
     margin-left: 10%;
   }
 }

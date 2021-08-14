@@ -66,7 +66,7 @@ function Home() {
                             The bot makes calls to the Steam Web API every 2 minutes to check for Dota 2 news and updates.
                             Built using Javascript and Discord.js.
                         </div>
-                        <VStack>
+                        <VStack align={["center", "center", "center", "start", "start"]}>
                             <Button id="button" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline">
                                 <Link to="/patchbot">Learn More</Link>
                             </Button>
@@ -86,7 +86,7 @@ function Home() {
                             The goal is to color the correct squares following the clues printed on the left side and top of the grid that correspond to the number of colored squares in sequence in each row/column.
                             Built using Javascript and p5.js
                         </div>
-                        <VStack spacing={8}>
+                        <VStack align={["center", "center", "center", "start", "start"]}>
                             <Button id="button" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline" mt="100px">
                                 <Link to="/puzzlegame">Learn More</Link>
                             </Button>
@@ -115,7 +115,7 @@ function Home() {
                             The Bot stores member data such as discord id and birthday in DynamoDB and retrieves it in order to hand-craft a loving birthday wish from a friend (that will never be annoying).
                             Built in Java and Spring using various AWS services.
                         </div>
-                        <VStack>
+                        <VStack align={["center", "center", "center", "start", "start"]}>
                             <Button id="button" rightIcon={<ArrowForwardIcon />} colorScheme="brand" variant="outline">
                                 <Link to="/birthdaybot">Learn More</Link>
                             </Button>

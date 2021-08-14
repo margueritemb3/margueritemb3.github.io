@@ -6,6 +6,7 @@ import {
     GridItem,
     Heading,
     Button,
+    Center,
     Link,
     Text
 } from '@chakra-ui/react';
@@ -41,12 +42,16 @@ function PatchBot() {
                     A Discord bot that checks for updates and news about the video game, Dota 2, and posts links to the official news/updates in a specified discord channel.
                 </Text>
                 <Grid id="grid" p={[1, 2, 2, 2, 2]} templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]} gap={6}>
-                    <GridItem w="100%" h="95%" colSpan={1}>
-                        <img class="projectImage" src={update1} />
-                    </GridItem>
-                    <GridItem w="80%" h="95%" colSpan={1}>
-                        <img class="projectImage" src={commands} />
-                    </GridItem>
+                    <Center>
+                        <GridItem w="100%" h="95%" colSpan={1}>
+                            <img class="projectImage" src={update1} />
+                        </GridItem>
+                    </Center>
+                    <Center>
+                        <GridItem w="80%" h="95%" colSpan={1}>
+                            <img class="projectImage" src={commands} />
+                        </GridItem>
+                    </Center>
                 </Grid>
                 <Heading id="heading">How To Use The Bot</Heading>
                 <Text id="text">

@@ -6,6 +6,7 @@ import {
     GridItem,
     Heading,
     Button,
+    Center,
     Link,
     Text
 } from '@chakra-ui/react';
@@ -45,12 +46,16 @@ function BirthdayBot() {
                     A Discord bot that allows members of a Discord server to send eachother birthday wishes on any day of the year with a "Happy Birthday eve eve eve eve eve eve ..." message.
                 </Text>
                 <Grid id="grid" p={[1, 2, 2, 2, 2]} templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]} gap={6}>
-                    <GridItem w="100%" h="95%" colSpan={1}>
-                        <img class="projectImage" src={commands1} />
-                    </GridItem>
-                    <GridItem w="80%" h="95%" colSpan={1}>
-                        <img class="projectImage" src={commands2} />
-                    </GridItem>
+                    <Center>
+                        <GridItem w="100%" h="95%" colSpan={1}>
+                            <img class="projectImage" src={commands1} />
+                        </GridItem>
+                    </Center>
+                    <Center>
+                        <GridItem w="80%" h="95%" colSpan={1}>
+                            <img class="projectImage" src={commands2} />
+                        </GridItem>
+                    </Center>
                 </Grid>
                 <Heading id="heading">How To Use The Bot</Heading>
                 <Text id="text">
