@@ -39,12 +39,12 @@ function PuzzleGame() {
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
             <Button id="backButton" onClick={() => history.push('/')} leftIcon={<ArrowBackIcon />} colorScheme="brand" variant="outline" />
+            <Heading id="projectTitle">Grid Puzzle Game</Heading>
             <Box id="projectSection">
-                <Heading id="projectTitle">Grid Puzzle Game</Heading>
                 <Text id="text">
                     A randomly generated puzzle game that is inspired by puzzle games like Picross and Nonogram.
                 </Text>
-                <Grid p={3} templateColumns="repeat(3, 1fr)" gap={6} ml="50px" mr="50px">
+                <Grid p={[1, 3, 3, 3, 3]} templateColumns={["repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(3, 1fr)", "repeat(3, 1fr)", "repeat(3, 1fr)"]} gap={6} ml="50px" mr="50px">
                     <GridItem w="100%" h="95%" colSpan={1}>
                         <img class="projectImage" src={blank} />
                     </GridItem>

@@ -39,13 +39,12 @@ function BirthdayBot() {
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
             <Button id="backButton" onClick={() => history.push('/')} leftIcon={<ArrowBackIcon />} colorScheme="brand" variant="outline" />
+            <Heading id="projectTitle">Birthday-Eve Bot</Heading>
             <Box id="projectSection">
-
-                <Heading id="projectTitle">Birthday-Eve Bot</Heading>
                 <Text id="text">
                     A Discord bot that allows members of a Discord server to send eachother birthday wishes on any day of the year with a "Happy Birthday eve eve eve eve eve eve ..." message.
                 </Text>
-                <Grid p={2} templateColumns="repeat(2, 1fr)" gap={6} ml="50px">
+                <Grid id="grid" p={[1, 2, 2, 2, 2]} templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]} gap={6}>
                     <GridItem w="100%" h="95%" colSpan={1}>
                         <img class="projectImage" src={commands1} />
                     </GridItem>

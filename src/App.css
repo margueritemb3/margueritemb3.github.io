@@ -5,26 +5,27 @@
 
 @media only screen and (max-width: 600px) {
   #name {
-    padding-top: 60px;
+    padding-top: 15%;
     font-family: 'WindSong', cursive;
-    font-size: 40px;
+    font-size: 45px;
     text-shadow: 5px 5px 10px black;
     color: #fed7e2;
   }
 
   #subtitle {
+    margin-top: 10px;
     font-family: 'Major Mono Display', monospace;
-    font-size: 10px;
+    font-size: 12px;
     text-shadow: 3px 3px 3px black;
     color: #eebd95;
   }
 
   #projectBox {
-    margin: 50px;
+    margin: 20px;
     padding-top: 50px;
     box-shadow: 10px 10px 10px black;
     text-align: 'center';
-    background: rgba(57, 66, 80, 0.7);
+    background: rgba(57, 66, 80, 0.8);
     color: #ffffff;
     font-size: 20px;
   }
@@ -34,12 +35,19 @@
     text-align: left;
     padding-bottom: 15px;
     font-family: 'Spectral', serif;
+    text-align: center;
   }
 
   #projectText {
     font-size: 15px;
     text-align: left;
     font-family: 'Karla', sans-serif;
+    text-align: justify;
+  }
+
+  #gridItem {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .branches {
@@ -78,15 +86,16 @@
   }
 
   #downButton {
-    margin-top: 250px;
-    color: #fed7e2;
+    display: none;
   }
 
   #projectSection {
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1px;
     padding-bottom: 30px;
+    background: rgba(57, 66, 80, 0.8);
     text-align: center;
     font-size: 20px;
   }
@@ -95,6 +104,7 @@
     font-family: 'Spectral', serif;
     color: #fed7e2;
     font-size: 30px;
+    text-align: center;
   }
 
   #heading {
@@ -110,18 +120,22 @@
     text-align: justify;
     font-size: 15px;
     color: #ffffff;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #textTab {
     font-family: 'Karla', sans-serif;
-    text-align: justify;
+    margin-left: 5%;
+    text-align: left;
     color: #ffffff;
   }
+
 }
 
 @media only screen and (min-width: 600px) {
   #name {
-    padding-top: 60px;
+    padding-top: 20%;
     font-family: 'WindSong', cursive;
     font-size: 60px;
     text-shadow: 5px 5px 10px black;
@@ -139,8 +153,7 @@
     margin: 50px;
     padding-top: 50px;
     box-shadow: 10px 10px 10px black;
-    text-align: 'center';
-    background: rgba(57, 66, 80, 0.7);
+    background: rgba(57, 66, 80, 0.8);
     color: #ffffff;
     font-size: 20px;
   }
@@ -150,12 +163,18 @@
     text-align: left;
     padding-bottom: 15px;
     font-family: 'Spectral', serif;
+    text-align: center;
   }
 
   #projectText {
     font-size: 18px;
-    text-align: left;
     font-family: 'Karla', sans-serif;
+    text-align: justify;
+  }
+
+  #gridItem {
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
   .branches {
@@ -173,7 +192,7 @@
   }
 
   #projectPage {
-    background-size: 800px;
+    background-size: 110%;
   }
 
   .projectImage {
@@ -185,6 +204,7 @@
   #button {
     margin-top: 50px;
     font-family: 'Karla', sans-serif;
+    font-size: 15px
   }
 
   #backButton {
@@ -194,15 +214,16 @@
   }
 
   #downButton {
-    margin-top: 250px;
-    color: #fed7e2;
+    display: none;
   }
 
   #projectSection {
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 40px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 1px;
     padding-bottom: 30px;
+    background: rgba(57, 66, 80, 0.8);
     text-align: center;
     font-size: 20px;
   }
@@ -211,6 +232,7 @@
     font-family: 'Spectral', serif;
     color: #fed7e2;
     font-size: 35px;
+    text-align: center;
   }
 
   #heading {
@@ -222,6 +244,8 @@
 
   #text {
     margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
     font-family: 'Karla', sans-serif;
     text-align: justify;
     font-size: 15px;
@@ -229,10 +253,14 @@
   }
 
   #textTab {
-    margin-left: 50px;
+    margin-left: 8%;
     font-family: 'Karla', sans-serif;
-    text-align: justify;
+    text-align: left;
     color: #ffffff;
+  }
+
+  #grid{
+    margin-left: 8%;
   }
 }
 
@@ -283,7 +311,7 @@
   }
 
   #home {
-    background-size: 1200px;
+    background-size: 1100px;
     border-style: solid;
     border-width: 1px;
     border-color: #1c2736;
@@ -311,15 +339,17 @@
   }
 
   #downButton {
-    margin-top: 250px;
     color: #fed7e2;
+    display: inline;
   }
 
   #projectSection {
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 1px;
     padding-bottom: 30px;
+    background: rgba(57, 66, 80, 0.8);
     text-align: center;
     font-size: 20px;
   }
@@ -350,6 +380,10 @@
     font-family: 'Karla', sans-serif;
     text-align: justify;
     color: #ffffff;
+  }
+
+  #grid{
+    margin-left: 10%;
   }
 }
 
@@ -434,8 +468,8 @@
 
   #projectSection {
     margin-top: 50px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-bottom: 30px;
     text-align: center;
     font-size: 20px;
@@ -467,6 +501,10 @@
     font-family: 'Karla', sans-serif;
     text-align: justify;
     color: #ffffff;
+  }
+
+  #grid{
+    margin-left: 10%;
   }
 }
 
@@ -552,9 +590,10 @@
 
   #projectSection {
     margin-top: 50px;
-    margin-left: 24%;
-    margin-right: 24%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding-bottom: 30px;
+    background: rgba(57, 66, 80, 0);
     text-align: center;
     font-size: 20px;
   }
@@ -583,7 +622,10 @@
   #textTab {
     margin-left: 50px;
     font-family: 'Karla', sans-serif;
-    text-align: justify;
     color: #ffffff;
+  }
+  
+  #grid{
+    margin-left: 10%;
   }
 }

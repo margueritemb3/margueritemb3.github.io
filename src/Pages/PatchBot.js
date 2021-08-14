@@ -35,12 +35,12 @@ function PatchBot() {
                 {[...Array(30).keys()].map((i) => (<i key={i}></i>))}
             </div>
             <Button id="backButton" onClick={() => history.push('/')} leftIcon={<ArrowBackIcon />} colorScheme="brand" variant="outline" />
+            <Heading id="projectTitle">Dota 2 Patch Bot</Heading>
             <Box id="projectSection">
-                <Heading id="projectTitle">Dota 2 Patch Bot</Heading>
                 <Text id="text">
                     A Discord bot that checks for updates and news about the video game, Dota 2, and posts links to the official news/updates in a specified discord channel.
                 </Text>
-                <Grid p={2} templateColumns="repeat(2, 1fr)" gap={6} ml="50px">
+                <Grid id="grid" p={[1, 2, 2, 2, 2]} templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]} gap={6}>
                     <GridItem w="100%" h="95%" colSpan={1}>
                         <img class="projectImage" src={update1} />
                     </GridItem>

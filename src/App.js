@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { createBreakpoints } from '@chakra-ui/theme-tools'
 import './Leaves.css';
 import './App.css';
 import Home from './Pages/Home.js';
@@ -32,7 +33,16 @@ const colors = {
   },
 };
 
+const breakpoints = createBreakpoints({
+  sm: "600px",
+  md: "768px",
+  lg: "992px",
+  xl: "1200px",
+  "2xl": null,
+})
+
 const theme = extendTheme({
+  breakpoints,
   colors,
   styles: {
     global: {
