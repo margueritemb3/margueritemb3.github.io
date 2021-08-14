@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.66b95b92.chunk.css",
-    "main.js": "/static/js/main.5e87bd1a.chunk.js",
-    "main.js.map": "/static/js/main.5e87bd1a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.693f8f0d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.693f8f0d.js.map",
-    "static/js/2.3523f4f5.chunk.js": "/static/js/2.3523f4f5.chunk.js",
-    "static/js/2.3523f4f5.chunk.js.map": "/static/js/2.3523f4f5.chunk.js.map",
-    "static/js/3.1cfe36ae.chunk.js": "/static/js/3.1cfe36ae.chunk.js",
-    "static/js/3.1cfe36ae.chunk.js.map": "/static/js/3.1cfe36ae.chunk.js.map",
+    "main.css": "/static/css/main.acf291e9.chunk.css",
+    "main.js": "/static/js/main.f7d5694d.chunk.js",
+    "main.js.map": "/static/js/main.f7d5694d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9f01bdbe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9f01bdbe.js.map",
+    "static/js/2.7c5a38fb.chunk.js": "/static/js/2.7c5a38fb.chunk.js",
+    "static/js/2.7c5a38fb.chunk.js.map": "/static/js/2.7c5a38fb.chunk.js.map",
+    "static/js/3.817fafb9.chunk.js": "/static/js/3.817fafb9.chunk.js",
+    "static/js/3.817fafb9.chunk.js.map": "/static/js/3.817fafb9.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.66b95b92.chunk.css.map": "/static/css/main.66b95b92.chunk.css.map",
-    "static/js/2.3523f4f5.chunk.js.LICENSE.txt": "/static/js/2.3523f4f5.chunk.js.LICENSE.txt",
+    "static/css/main.acf291e9.chunk.css.map": "/static/css/main.acf291e9.chunk.css.map",
+    "static/js/2.7c5a38fb.chunk.js.LICENSE.txt": "/static/js/2.7c5a38fb.chunk.js.LICENSE.txt",
     "static/media/BdayBot.375b9282.jpg": "/static/media/BdayBot.375b9282.jpg",
     "static/media/BdayBot1.8f68f9d2.JPG": "/static/media/BdayBot1.8f68f9d2.JPG",
     "static/media/BdayBot2.67fc16f8.png": "/static/media/BdayBot2.67fc16f8.png",
@@ -24,13 +24,13 @@
     "static/media/Puzzle_Complete.50c79165.JPG": "/static/media/Puzzle_Complete.50c79165.JPG",
     "static/media/Puzzle_Partial.f47f5ed1.JPG": "/static/media/Puzzle_Partial.f47f5ed1.JPG",
     "static/media/Web_App_Reference_Architecture.a3b200b9.png": "/static/media/Web_App_Reference_Architecture.a3b200b9.png",
-    "static/media/App.css": "/static/media/rightbranches.13c1879a.png",
+    "static/media/App.css": "/static/media/rbranches.7a154238.png",
     "static/media/quonk.30b84da1.gif": "/static/media/quonk.30b84da1.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.693f8f0d.js",
-    "static/js/2.3523f4f5.chunk.js",
-    "static/css/main.66b95b92.chunk.css",
-    "static/js/main.5e87bd1a.chunk.js"
+    "static/js/runtime-main.9f01bdbe.js",
+    "static/js/2.7c5a38fb.chunk.js",
+    "static/css/main.acf291e9.chunk.css",
+    "static/js/main.f7d5694d.chunk.js"
   ]
 }
